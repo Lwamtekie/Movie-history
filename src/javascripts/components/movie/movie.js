@@ -1,12 +1,11 @@
 import util from '../../helpers/util';
 import MovieData from '../../helpers/Data/movieData';
 
-const addEvents = () => {
-  document.getElementById('add-movie-button').addEventListner('click', () => {
-  });
-};
+// const addEvents = () => {
+//   document.getElementById('add-movie-button').addEventListner('click', () => {
+//   });
+// };
 const movieStringBuilder = (movies) => {
-  console.error(movies);
   let domString = '<div class="row">';
   movies.forEach((movie) => {
     domString += '<div class="col-3">';
@@ -23,7 +22,7 @@ const movieStringBuilder = (movies) => {
   });
   domString += '</div>';
   util.printToDom('allMovies', domString);
-  addEvents();
+  // addEvents();
 };
 
 const initMoviesData = () => {

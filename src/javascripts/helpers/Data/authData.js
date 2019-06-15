@@ -9,6 +9,7 @@ import movies from '../../components/movie/movie';
 
 const authDiv = document.getElementById('auth');
 const movieDiv = document.getElementById('movie');
+const allMoviesDiv = document.getElementById('allMovies');
 const movieNavbar = document.getElementById('navbar-button-movie');
 const authNavbar = document.getElementById('navbar-button-auth');
 const logoutNavbar = document.getElementById('navbar-button-logout');
@@ -54,6 +55,8 @@ const addEvents = () => {
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
+      console.error('test');
+      allMoviesDiv.classList.remove('hide');
       authDiv.classList.add('hide');
       movieDiv.classList.remove('hide');
       movieNavbar.classList.remove('hide');
@@ -61,6 +64,7 @@ const checkLoginStatus = () => {
       logoutNavbar.classList.remove('hide');
       addEvents();
     } else {
+      allMoviesDiv.classList.add('hide');
       authDiv.classList.remove('hide');
       movieDiv.classList.add('hide');
       movieNavbar.classList.add('hide');

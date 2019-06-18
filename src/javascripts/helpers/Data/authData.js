@@ -2,9 +2,9 @@ import firebase from 'firebase/app';
 
 import 'firebase/auth';
 
-import movieData from './movieData';
+import movieData from './moviesData';
 
-import movies from '../../components/movie/movie';
+import movies from '../../components/movies/movies';
 
 
 const authDiv = document.getElementById('auth');

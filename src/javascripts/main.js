@@ -8,7 +8,7 @@ import authData from './helpers/Data/authData';
 
 import apiKeys from './helpers/apiKeys.json';
 
-import movie from './components/movie/movie';
+import movie from './components/movies/movies';
 
 import '../styles/main.scss';
 

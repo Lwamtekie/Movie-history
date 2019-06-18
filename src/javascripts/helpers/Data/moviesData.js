@@ -18,5 +18,6 @@ const getMoviesByUid = () => new Promise((resolve, reject) => {
     .catch(err => reject(err));
 });
 const addNewMovie = movieObject => axios.post(`${firebaseUrl}/movies.json`, movieObject);
+const deleteMovie = movieId => axios.delete(`${firebaseUrl}/movies/${movieId}.json`);
 
-export default { addNewMovie, getMoviesByUid };
+export default { addNewMovie, getMoviesByUid, deleteMovie };

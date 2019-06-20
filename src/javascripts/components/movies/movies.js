@@ -15,14 +15,11 @@ const deleteMoviesEvent = (e) => {
 
 
 const addEvents = () => {
-  document.getElementById('add-movie-button').addEventListener('click', () => {
-    console.error('add-movie-button');
-    const deleteButtons = document.getElementsByClassName('delete-movie');
-    for (let i = 0; i < deleteButtons.length; i += 1) {
-      deleteButtons[i].addEventListener('click', deleteMoviesEvent);
-    }
-    document.getElementById('save-movies').addEventListener('click', addEvents);
-  });
+  const deleteButtons = document.getElementsByClassName('delete-movie');
+  console.error(deleteButtons);
+  for (let i = 0; i < deleteButtons.length; i += 1) {
+    deleteButtons[i].addEventListener('click', deleteMoviesEvent);
+  }
 };
 
 
@@ -45,7 +42,6 @@ const movieStringBuilder = (movies) => {
   addEvents();
 };
 
-
 const initMoviesData = () => {
   movieData.getMoviesByUid()
     .then((movie) => {
@@ -53,4 +49,29 @@ const initMoviesData = () => {
     })
     .catch(err => console.error('no events', err));
 };
-export default { initMoviesData };
+
+const createNewMovie = (e) => {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const rating = document.getElementById('rating').value;
+  const imgUrl = document.getElementById('imageUrl').value;
+  console.error(name, rating, imgUrl);
+  const newMovie = {
+    title: document.getElementById('name').value,
+    mpaaRating: document.getElementById('rating').value,
+    imageUrl: document.getElementById('imageUrl').value,
+  };
+  movieData.addNewMovie(newMovie)
+    .then(() => {
+      initMoviesData();
+      document.getElementById('new-movie').classList.add('hide');
+    });
+};
+
+const newMovieButton = () => {
+  console.error('createNewmovie');
+  document.getElementById('new-movie').classList.remove('hide');
+  document.getElementById('saveNewMovie').addEventListener('click', createNewMovie);
+};
+
+export default { initMoviesData, newMovieButton };

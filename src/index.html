@@ -7,6 +7,53 @@
   <title>Test</title>
 </head>
 <body>
-  
+  <div id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Movie</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a id="navbar-button-auth" class="nav-link">Authentication</a>
+            </li>
+            <li class="nav-item">
+              <a id="navbar-button-movie" class="nav-link hide">Movie history</a>
+            </li>
+            <li class="nav-item">
+              <a id="navbar-button-logout" class="nav-link hide">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</div>
+
+<div id="auth"></div>
+<div id="movie" class="hide">
+  <h3>Movies Collection</h3>
+  <!--- add movies button --->
+  <div id="add-movie">
+    <button class="btn btn-primary" id="add-movie-button">Add Movie</button>
+  </div>
+</div>
+<div id=new-movie class=hide>
+    <form class="col-6 offset-3">
+        <div class=form-group>
+            <label for=name>Movie</label>
+            <input type=text class=form-control id=name placeholder="greys-Anatomy">
+        </div>
+        <div class=form-group>
+            <label for=rating>Rating</label>
+            <input type=text class=form-control id=rating placeholder="Rating">
+        </div>
+        <div class=form-group>
+            <label for=name></label>
+            <input type=text class=form-control id=imageUrl placeholder="">
+        </div>
+        <button type=submit id=saveNewMovie class="btn btn-primary">Save Movie</button>
+    </form>
+</div>
+<div id="allMovies" class="hide"></div>
 </body>
 </html>

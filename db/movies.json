@@ -1,0 +1,42 @@
+{
+"movie01": {
+  "title": "Hidden Figures",
+  "Rating": "PG",
+  "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51ILaGDvB0L._SY445_.jpg"
+},
+"movie02": {
+  "title": "Sully",
+  "Rating": "PG",
+  "imageUrl": "https://images.mymovies.net/images/film/cin/350x522/fid16611.jpg"
+},
+"movie03": {
+  "title": "Pretty Woman",
+  "Rating": "R",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Pretty_Woman_OST.jpg/220px-Pretty_Woman_OST.jpg"
+},
+"movie04": {
+  "title": "Legally Blonde",
+  "Rating": "PG",
+  "imageUrl": "http://barkerhost.com/wp-content/uploads/sites/4/2018/01/1gAnkZNAd3HqgWL7aqSOQFwt7D1-0.jpg"
+},
+"movie05": {
+  "title": "Coming to America",
+  "Rating": "r",
+  "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51DXFH5820L.jpg"
+},
+"movie06": {
+  "title": "Ever After",
+  "Rating": "PG",
+  "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71uarwiO29L.jpg"
+},
+"movie07": {
+  "title": "First Knight",
+  "Rating": "PG-13",
+  "imageUrl": "https://static.rogerebert.com/uploads/movie/movie_poster/first-knight-1995/large_lXrYOk7O6Fryx994bZQKUuFLxZC.jpg"
+},
+"movie08": {
+  "title": "Gladiator",
+  "Rating": " pg-13.",
+  "imageUrl": "https://www.vintagemovieposters.co.uk/wp-content/uploads/2015/07/gladiatorreviewslarge1-482x358.jpg"
+}
+}

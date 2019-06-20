@@ -1,4 +1,47 @@
 @import "~bootstrap/scss/bootstrap";
+
 body {
-  background-color: blue;
+  background-color: darkkhaki;
+  align-content: center;
+}
+
+img{
+  margin-left:4rem;
+  height: 200px;
+}
+
+.btn-danger {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.bg-dark {
+  border:double;
+  background-color: #343a40 !important;
+  border-color: #dc3545;
+  
+}
+
+.hide{
+  display:none;
+}
+
+.card-body {
+  max-height: 400px;
+  background-color: bisque;
+}
+.col-3{
+  margin-top:1rem;
+  margin-right:2rem;
+  margin-left:2rem;
+  border:solid;
+  border: double;
+  border: black;
+  height:400px;
+}
+
+.h4 {
+  font-size: 1.5rem;
+  align-items: center;
+  margin: 0 auto;
+  margin-left: 5rem;
 }

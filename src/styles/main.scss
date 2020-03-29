@@ -6,8 +6,8 @@ body {
 }
 
 img{
-  margin-left:4rem;
-  height: 200px;
+  margin-left: 0 auto;
+  height: 150px;
 }
 
 .btn-danger {
@@ -27,7 +27,10 @@ img{
 
 .card-body {
   max-height: 400px;
-  background-color: bisque;
+  background-image: url("https://wallpapercave.com/wp/wp3709095.jpg") !important;
+    background-position: center center ; 
+    background-size: cover;
+    background-attachment: fixed;
 }
 .col-3{
   margin-top:1rem;
